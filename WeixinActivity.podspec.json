@@ -8,25 +8,27 @@
     "iDay": "johnny.iday@gmail.com"
   },
   "screenshots": [
-    "https://raw.github.com/iDay/WeixinActivity/master/ios6.png",
-    "https://raw.github.com/iDay/WeixinActivity/master/ios7.png"
+    "https://raw.github.com/cute/WeixinActivity/master/ios6.png",
+    "https://raw.github.com/cute/WeixinActivity/master/ios7.png"
   ],
   "platforms": {
     "ios": "6.0"
   },
   "source": {
-    "git": "https://github.com/iDay/WeixinActivity.git",
+    "git": "https://github.com/cute/WeixinActivity.git",
     "tag": "1.2.0"
   },
   "source_files": "WeixinActivity",
   "resources": "WeixinActivity/Resources/*.png",
   "public_header_files": "WeixinActivity/**/*.h",
   "requires_arc": true,
-  "subspecs": [
-    {
-      "name": "Weixin",
-      "source_files": "WeixinActivity/Resources/*.h",
-      "vendored_libraries": "WeixinActivity/Resources/libWeChatSDK.a"
-    }
-  ]
+  "subspecs": [{
+    "name": "Weixin",
+    "source_files": "WeixinActivity/Resources/*.h"
+  }],
+  "dependencies": {
+    "Weixin": [
+
+    ]
+  }
 }
